@@ -25,17 +25,17 @@ export class FilesService {
         }
     }
 
-    async readFile(filePath: string): Promise<string> {
-        return new Promise((resolve, reject) => {
-            fs.readFile(filePath, 'utf8', (err, data) => {
-                if (err) {
-                    reject(err);
-                } else {
-                    resolve(data);
-                }
-            });
-        });
-    }
+    // async readFile(filePath: string): Promise<string> {
+    //     return new Promise((resolve, reject) => {
+    //         fs.readFile(filePath, 'utf8', (err, data) => {
+    //             if (err) {
+    //                 reject(err);
+    //             } else {
+    //                 resolve(data);
+    //             }
+    //         });
+    //     });
+    // }
 
     async createFile(filePath: string, data: string): Promise<void> {
         return new Promise((resolve, reject) => {

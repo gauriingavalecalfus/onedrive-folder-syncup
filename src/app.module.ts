@@ -11,21 +11,5 @@ import { FilesModule } from './files/files.module';
   exports: [ConfigService]
 
 })
-export class AppModule { }
+export class AppModule  { }
 
-
-
-
-
-
-
-// import { Module } from '@nestjs/common';
-// import { FileService } from './files/files.service';
-// import { FileController } from './files/files.controller';
-
-// @Module({
-//   imports: [],
-//   controllers: [FileController],
-//   providers: [FileService],
-// })
-// export class AppModule {}
